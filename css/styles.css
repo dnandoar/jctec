@@ -1,0 +1,886 @@
+/* Fuentes */
+
+@font-face {
+  font-family: "TrebucheMS";
+  src: url("../fonts/TrebuchetMS.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("ttf"),
+    url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ESTILOS GENERALES */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/pattern.png);
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 27px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "BebasNeue";
+  text-shadow: 0px 0px 5px gray;
+  color: #0370b9;
+  line-height: 54px;
+  letter-spacing: 1.5px;
+}
+
+/* NAV */
+
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: #ccc !important; */
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 80%;
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 0px !important;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-brand {
+  padding: 0px;
+  margin-right: 0px;
+  transition: all 300ms;
+}
+
+.navbar-brand img {
+  width: 200px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 15px;
+}
+
+.container a,
+.container-fluid a,
+.container-lg a,
+.container-md a,
+.container-sm a,
+.container-xl a,
+.container-xxl a {
+  color: white;
+  transition: all 300ms;
+}
+
+.container a:hover,
+.container-fluid a:hover,
+.container-lg a:hover,
+.container-md a:hover,
+.container-sm a:hover,
+.container-xl a:hover,
+.container-xxl a:hover {
+  color: #5f95b9 !important;
+  transform: scale(1.2, 1.2) !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav li a {
+  padding: 0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 30px;
+  font-family: "BebasNeue";
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 300ms;
+}
+
+.navbar-nav li:last-child a {
+  margin-right: 0px;
+}
+
+/* HEADER */
+
+#header {
+  width: 100%;
+  height: 70px;
+  background-color: #0370b9;
+  opacity: 0.8;
+  font-family: "BebasNeue";
+  position: fixed;
+  z-index: 1;
+}
+
+#header .contenedor {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 3px;
+}
+
+#header .logo a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  transition: all 300ms;
+}
+
+#header .logo a:hover {
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.2, 1.2);
+}
+
+#header .menu ul {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+#header .menu ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+#header .menu ul li:last-child {
+  margin-right: 0px;
+}
+
+#header .menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+#header .menu ul li a:hover {
+  color: #333;
+  font-weight: bold;
+  transform: scale(1.2, 1.2);
+}
+
+/* BANNER */
+
+#banner .contenedor {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner .contenedor .banner-img {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+#banner .contenedor .banner-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.3;
+  object-fit: cover;
+  object-position: center;
+}
+
+#banner .banner-texto {
+  width: 40%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+#banner .banner-texto h1 {
+  display: block;
+  font-family: "BebasNeue";
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: white;
+}
+
+#banner .banner-texto p {
+  display: block;
+  font-family: "TrebucheMS";
+  font-size: 17px;
+  color: #ccc;
+  text-align: justify;
+}
+
+#banner .banner-wapp {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  left: 83%;
+  top: 77%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+#banner .p-mensaje {
+  width: 70%;
+  height: 50px;
+  background-color: #ccc;
+  opacity: 0.9;
+  padding-left: 9px;
+  border-radius: 10px;
+}
+
+#banner .p-mensaje p {
+  padding: 5px 0px;
+  font-family: "TrebucheMS";
+  font-size: 14px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+#banner .p-mensaje span {
+  font-weight: bold;
+}
+
+#banner .icono-wapp {
+  width: 40%;
+  height: auto;
+  color: white;
+  margin-left: 9px;
+}
+
+#banner .icono-wapp img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  transition: all 300ms;
+}
+
+#banner .icono-wapp:hover img {
+  box-shadow: 0px 0px 15px #25d366;
+}
+
+/* SERVICIOS */
+#servicios {
+  padding-top: 101px;
+}
+
+#servicios .contenedor {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+#servicios .cards-serv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#servicios .cards-serv .card {
+  width: 31%;
+  height: auto;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 10px #ccc;
+  transition: all 300ms ease;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+#servicios .cards-serv .card:hover {
+  box-shadow: 2px 2px 10px #ccc, 1px 1px 10px #0370b9;
+  background-color: #333;
+  color: white;
+}
+
+#servicios .cards-serv .card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#servicios .cards-serv .card:hover img {
+  animation: izq-img 600ms linear;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+@keyframes izq-img {
+  0% {
+    transform: translateX(-600px);
+  }
+  25% {
+    transform: translateX(-450px);
+  }
+  50% {
+    transform: translateX(-300px);
+  }
+  75% {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#servicios .cards-serv .card .card-body {
+  height: 190px;
+}
+
+#servicios .cards-serv .card h3 {
+  font-family: "BebasNeue";
+  font-size: 30px;
+}
+
+#servicios .cards-serv .card:hover h3 {
+  animation: der-titulo 700ms linear;
+}
+
+@keyframes der-titulo {
+  0% {
+    transform: translateX(600px);
+  }
+  25% {
+    transform: translateX(450px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  75% {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#servicios .cards-serv .card p {
+  font-family: "TrebucheMS";
+  font-size: 13px;
+  margin-bottom: 10px !important;
+  text-align: justify;
+}
+
+#servicios .cards-serv .card:hover p {
+  animation: der-text 800ms linear;
+}
+
+@keyframes der-text {
+  0% {
+    transform: translateX(-600px);
+  }
+  25% {
+    transform: translateX(-450px);
+  }
+  50% {
+    transform: translateX(-300px);
+  }
+  75% {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#servicios .cards-serv .card .btn {
+  display: block;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 400ms;
+}
+
+#servicios .cards-serv .card:hover .btn {
+  top: 21%;
+}
+
+#servicios .cards-serv .card .btn:hover {
+  background-color: #0370b9;
+  color: white;
+}
+
+#servicios .cards-serv .card:nth-child(4),
+#servicios .cards-serv .card:nth-child(5),
+#servicios .cards-serv .card:nth-child(6) {
+  margin-bottom: 0px;
+}
+
+#servicios .modal-content {
+  background-color: #333;
+  opacity: 0.9;
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+#servicios .modal-header h4 {
+  font-family: "BebasNeue";
+  font-size: 30px !important;
+}
+
+#servicios .modal-body ul li {
+  font-family: "TrebucheMS";
+}
+
+/* CLIENTES */
+
+#clientes {
+  padding-top: 101px;
+}
+
+#clientes .contenedor {
+  width: 80%;
+  height: auto;
+}
+
+#clientes .titulo p {
+  font-family: "TrebucheMS";
+  font-size: 17px;
+  /* color: #ccc; */
+  line-height: 1.5;
+  text-align: center;
+}
+
+.carousel-inner {
+  width: 92%;
+  margin: 0 auto;
+  float: none;
+  clear: both;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
+}
+
+#clientes .cards {
+  width: 92%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#clientes .card {
+  width: 22%;
+  height: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+#clientes .card:nth-child(3),
+#clientes .card:nth-child(6),
+#clientes .card:nth-child(9),
+#clientes .card:nth-child(12) {
+  margin-right: 0px;
+}
+
+#clientes .card img {
+  padding: 5px;
+}
+
+#clientes .card-title {
+  font-family: "BebasNeue";
+  font-size: 20px;
+}
+
+#clientes .card-text {
+  font-family: "TrebucheMS";
+  text-align: justify;
+}
+
+#clientes .card-body {
+  display: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 25px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 4%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+
+#footer {
+  padding-top: 75px;
+}
+
+#footer .contenedor {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px 0px;
+}
+
+#footer .footer-logo {
+  width: 24.5%;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+
+#footer .footer-logo img {
+  width: 370px;
+  height: 171px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-logo p {
+  display: none;
+  font-family: "TrebucheMS";
+  font-size: 13px;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+
+#footer .footer-logo ul {
+  padding: 0px;
+  margin: 0px;
+}
+#footer .footer-logo ul li {
+  font-family: "TrebucheMS";
+  font-size: 13px;
+  color: white;
+  line-height: 1.5;
+  margin: 0px;
+  list-style: none;
+  padding: 6px 0px;
+  transition: all 300ms;
+}
+
+#footer .footer-logo ul li:hover {
+  color: #5f95b9;
+  transform: translateX(30px);
+}
+
+#footer .footer-logo ul li span {
+  font-family: "WebSymbolsRegular";
+  font-size: 15px;
+}
+
+#footer .footer-datos {
+  width: 24.5%;
+  height: 322px;
+  letter-spacing: 1.5px;
+}
+
+#footer .footer-datos h3 {
+  display: none;
+  font-family: "BebasNeue";
+  font-size: 30px;
+  color: white;
+}
+
+#footer .footer-datos h4 {
+  font-family: "BebasNeue";
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+#footer .footer-datos p {
+  font-family: "TrebucheMS";
+  font-size: 13px;
+  color: #ccc;
+  line-height: 2.5;
+}
+
+#footer .footer-datos strong {
+  color: white;
+}
+
+#footer .footer-datos a {
+  text-decoration: none;
+  color: #0370b9;
+  transition: all 300ms;
+}
+
+#footer .footer-datos a:hover {
+  color: #5f95b9;
+  text-decoration: underline;
+}
+
+#footer .footer-datos img {
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+  transition: all 300ms;
+}
+
+#footer .footer-datos img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#footer .footer-mapa h3 {
+  font-family: "BebasNeue";
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+#footer .footer-mapa iframe {
+  display: block;
+  width: 100%;
+  height: 278px;
+  margin: 0 auto;
+  filter: grayscale(1);
+  transition: all 300ms;
+}
+
+#footer .footer-mapa iframe:hover {
+  filter: grayscale(0);
+}
+
+#footer .footer-pie {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  border-top: 1px solid #ccc;
+}
+
+#footer .footer-pie p {
+  display: block;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 0px;
+}
+
+@media (max-width: 1413px) {
+  #servicios .cards-serv .card h3 {
+    font-family: "BebasNeue";
+    font-size: 25px;
+  }
+  #servicios .cards-serv .card p {
+    font-family: "TrebucheMS";
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1138px) {
+  #servicios .cards-serv .card h3 {
+    font-family: "BebasNeue";
+    font-size: 20px;
+  }
+  #servicios .cards-serv .card p {
+    font-family: "TrebucheMS";
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 415px) {
+  .fixed-top {
+    /* position: relative; */
+    /*  top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; */
+  }
+  .banner-img img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.3;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #banner .banner-texto {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+  }
+
+  #banner .banner-wapp {
+    width: 15%;
+    height: auto;
+    /* position: absolute; */
+    left: 77%;
+    /* top: 77%; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999; */
+  }
+
+  #banner .p-mensaje {
+    display: none;
+  }
+
+  #servicios .contenedor {
+    width: 100%;
+    height: auto;
+  }
+
+  #servicios .cards-serv .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+    box-shadow: 2px 2px 10px #ccc;
+    transition: all 300ms ease;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 500ms;
+  }
+
+  #servicios .cards-serv .card:nth-child(4),
+  #servicios .cards-serv .card:nth-child(5),
+  #servicios .cards-serv .card:nth-child(6) {
+    margin-bottom: 17px;
+  }
+
+  .carousel-inner {
+    width: 79%;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+  }
+
+  #clientes .contenedor {
+    width: 100%;
+    height: auto;
+  }
+
+  #clientes .cards {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #clientes .card {
+    width: 48%;
+    height: auto;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    /* overflow: hidden; */
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 11%;
+  }
+
+  #footer .contenedor {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+  }
+
+  #footer .footer-logo {
+    display: none;
+  }
+
+  #footer .footer-datos {
+    width: 100%;
+    height: 322px;
+    letter-spacing: 1.5px;
+    text-align: center;
+  }
+
+  #footer .footer-datos {
+    width: 100%;
+    height: 322px;
+    letter-spacing: 1.5px;
+  }
+}

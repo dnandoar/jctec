@@ -1,0 +1,339 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.94vw;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #413e4a;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+}
+
+section {
+  position: relative;
+}
+
+.container {
+  width: 85.74%;
+  padding: 0rem 1rem;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.8rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  border-width: 0.13rem;
+  border-style: solid;
+  transition: all 0.8s ease;
+  text-decoration: none;
+}
+
+.seccion {
+  padding-top: 4rem;
+  /* padding-bottom: 4rem; */
+}
+
+.fila {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.columna-100 {
+  width: 100%;
+}
+
+.columna-50 {
+  width: 50%;
+}
+
+.columna-41 {
+  width: 41.66%;
+}
+
+.columna-33 {
+  width: 33.33%;
+}
+
+.columna-25 {
+  width: 8.33%;
+}
+
+.columna-16 {
+  width: 16.66%;
+}
+
+.columna-8 {
+  width: 25%;
+}
+
+.fila.fila-centrada {
+  text-align: center;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.titulos {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2.8rem;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* header */
+
+.cabecera {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.cabecera .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecera .link-logo {
+  display: inline-block;
+}
+
+.cabecera .link-logo .logo {
+  width: 13rem;
+  height: auto;
+}
+
+.cabecera .menu a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  word-spacing: 0.1rem;
+  transition: all 0.8s ease;
+}
+
+.cabecera .menu .seleccionado,
+.cabecera .menu a:hover {
+  color: #ffea7d;
+}
+
+.cabecera .menu a:first-child {
+  margin-left: 0;
+}
+
+.cabecera .menu a:last-child {
+  margin-right: 0;
+}
+
+.cabecera .btn.boton-nav {
+  border-color: rgb(230, 154, 35, 1);
+}
+
+.cabecera .btn.boton-nav:hover,
+.cabecera .btn.boton-nav:hover i {
+  background-color: #ffca31;
+  color: #000;
+}
+
+.cabecera .menu .btn i {
+  font-size: 1.5rem;
+  color: rgb(8, 212, 8);
+  border-radius: 50%;
+}
+
+.cabecera .hamb {
+  color: rgb(230, 154, 35, 1);
+  font-size: 2.8rem;
+  display: none;
+}
+
+/* banner */
+
+.btn.boton-transparente {
+  background-color: transparent;
+  border-color: #ffca31;
+  color: #ffca31;
+}
+
+.btn.boton-transparente:hover {
+  background-color: #ffca31;
+  border-color: #ffca31;
+  color: #fff;
+}
+
+#banner {
+  background-color: #000;
+  height: calc(100vh - 0rem);
+}
+
+#banner .banner-home {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.7;
+  object-fit: cover;
+  object-position: center;
+}
+
+#banner .container {
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#banner .container .fondo {
+  background-color: #000;
+  opacity: 0.5;
+  padding: 15px;
+  border-radius: 20px 0px;
+}
+
+#banner .container h1 {
+  font-size: 1.6rem;
+  color: white;
+  margin: 0;
+}
+
+#banner .container p {
+  font-size: 0.9rem;
+  color: #fff492;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* servicios */
+
+.margen-serv {
+  margin-top: 1rem;
+}
+
+.cuadrado-perfecto {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.cuadrado-perfecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#servicios .bloque-servicio {
+  border: 1px solid gray;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio img {
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto {
+  padding-bottom: 50%;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio {
+  padding: 15px;
+  text-align: center;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio h3 {
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+#servicios .bloque-servicio .bloque-contenido-servicio p {
+  text-align: justify;
+}
+
+/* clientes */
+
+.item-carrusel {
+  height: 100%;
+  position: relative;
+}
+
+.tarjeta-carrusel {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: stretch;
+  align-items: center;
+}
+
+.tarjeta-carrusel img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.flechas-carrusel {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.flechas-carrusel a {
+  text-decoration: none;
+}
+
+.flechas-carrusel i {
+  color: #000;
+  font-size: 40px;
+}
+
+#conte-items-carrusel {
+  height: 200px;
+  overflow: hidden;
+}
